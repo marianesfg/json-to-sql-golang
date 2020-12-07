@@ -59,7 +59,7 @@ func main() {
 			result := fmt.Sprintf("%s%d%s", "Linha ", i+1, " desconsiderada por estar em branco.")
 			log.Println(result)
 		} else if len(datalist[i].DESCRIPTION) > 4000 {
-			result := fmt.Sprintf("%s%d%s", "Linha ", i, " desconsiderada pela descrição ter mais que 4000 caracteres.")
+			result := fmt.Sprintf("%s%d%s", "Linha ", i+1, " desconsiderada pela descrição ter mais que 4000 caracteres.")
 			log.Println(result)
 		} else {
 			result := fmt.Sprintf("%s%d%s%s%s%s%s%s%s%s%s", sql, datalist[i].IDCLIENT, ",", "'",
